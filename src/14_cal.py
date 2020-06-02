@@ -38,13 +38,15 @@ dt = datetime.today()
 if len(sys.argv) == 3:
     month = int(sys.argv[1])
     year = int(sys.argv[2])
+    print(calendar.month(year, month))
 elif len(sys.argv) == 2:
     month = int(sys.argv[1])
     year = dt.year
+    print(calendar.month(year, month))
 elif len(sys.argv) == 1:
     month = dt.month
     year = dt.year
-else:
-    print("Usage: 14_cal.py [month] [year]")
-
-print(calendar.month(year, month))
+    print(calendar.month(year, month))
+elif len(sys.argv) > 3:
+    print("---------ERROR---------")
+    print("Usage: python 14_cal.py [month (ex. 06)] [year (ex. 2020)]")
