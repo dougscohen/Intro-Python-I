@@ -36,7 +36,6 @@ class Geocache(Waypoint):
 
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
-
 waypoint = Waypoint("Catacombs", 41.70505, -121.51521)
 print(
     f"Name: {waypoint.name}\nLatitude: {waypoint.lat}\nLongitude: {waypoint.lon}")
